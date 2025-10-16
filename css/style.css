@@ -1,0 +1,226 @@
+
+.tradingViewsize{ /*the trading view heat map widget*/
+    width:48vw;
+    height: 70vh;
+}
+
+.videoWithButton{/* Container for video with a button beneath it */
+    display: flex;
+    width:40%;
+    flex-direction: column;
+    align-items: center;
+    min-width:300px;
+}
+
+.videoWithButton video{/* Makes the video fit the container width */
+    width:100%;
+    color:white;
+}
+
+.buttons{
+    display:block
+}
+
+
+.topbar{ /* Fixed navigation bar at the top of the page */
+    background-color:rgb(83, 148, 86);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 1000;
+    align-items: center;
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 4vw;
+}
+
+a{ /* Aligns text in to center */
+    text-align: center;
+}
+
+h1{ /* Main heading style */
+    text-decoration: none;
+    font-size:2.5vw;
+    color:black;
+    
+}
+
+h2{ /* Subheading style */
+    font-size: 2vw;
+    text-decoration: underline;
+}
+
+main{ /* Main content area layout */
+    padding: 30px;
+    padding-top: 150px;
+    font-size: 40px;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo{ /* Logo text styling */
+    font-size: 1.5vw;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    line-height: 50px;
+    min-width: 200px;
+    width : 250px;
+}
+
+.leftSide { /* Styles left column content layout */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    padding-bottom:100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.8vw;
+}
+
+.rightSide { /* Styles right column content layout */
+    display: flex;
+    gap: 20px;
+    padding-bottom:200px;
+}
+
+.navigationLinks {  /* Container for navigation menu links */
+    display: flex;
+    gap: 10vw;
+}
+
+.link { /* Styling for navigation link text */
+    color: black;
+    font-size: 1.2vw;
+}
+
+
+.newsSection { /* Section for news content display */
+    text-align: center;
+    font-size: 1.5vw;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 750px;
+}
+
+.newsHomepage { /* Homepage news highlight section */
+    text-align: center;
+    font-size: 25px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width:fit-content;
+    background-color: rgb(89, 168, 214);
+}
+
+.newsItem { /* Layout for an individual news item */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.newsImage { /* Image styling for news articles */
+    max-width: 60%;
+    height: auto;
+    object-fit: cover;
+    justify-content: center;
+
+}
+
+.newsIndividual { /* Layout for single news article view */
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    height: 500px;
+}
+
+.video { /* Video sizing for embedded videos */
+    width:50%;
+    height:auto;
+}
+
+.ticker { /* Styles fixed ticker bar */
+    padding-top: 40px;
+    width: 100%;
+    z-index: 900;
+    position: fixed;
+}
+
+.newsPageContent{  /* Layout for full news page content */
+    display:flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.newsArticles{ /* Heading or intro section for news articles */
+    text-align: center;
+    padding-top:70px;
+}
+
+.newsContent{ /* Container for multiple news articles */
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.brokerImage{ /* Image styling for broker page */
+    max-height:300px;
+    width:30vw;
+    height:auto;
+}
+
+.brokersPage{ /* Layout for brokers list page */ 
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap:1vh;
+}
+
+.slideTopPicks{ /* made so can fullscreen in this section */
+    width:100vw;
+    height:100vh;
+}
+
+.brokerImage1{  /* Alternate broker image sizing */
+    width: 30%;
+    height: 30%;
+    max-width: 1080px;
+    max-height: 1080px;
+}
+
+.howToInvest1{ /* Layout for 'How to invest' section */
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    gap: 20px;
+    font-size: 2.2vw;
+    align-items: center;
+    align-content: center;
+}
+
+.investParagraph{ /* Styling for investment information text */
+    display: flex;
+    flex-direction: column;
+    max-width: 60vw;
+}
