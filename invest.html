@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Stock Website</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div class="topbar">    <!--top bar for navigation on ever page-->
+            <a href="index.html" class="logo">The Stock Website</a>
+            <div class="navigationLinks">
+                <a href="news.html" class="link">News</a>
+                <a href="brokers.html" class="link">Brokers</a>
+                <a href="TopPicks.html" class="link">Top Picks</a>
+                <a href="Invest.html" class="link">Invest</a>
+            </div>
+        </div>
+
+        <div class="howToInvest1"> <!-- class to show image and paragraph nicely -->
+            <img src="images/photo-collage.png" alt="Three brokers Image" class="brokerImage1">
+            <div class="investParagraph">
+                <h3>Find a Broker</h3>
+                <p> To find a trusted broker, first check if they are regulated by recognized
+                    authorities like the SEC, FCA, or ASIC. Next, review their trading platform for 
+                    usability and features. Then, research fees and commissions to ensure transparency.
+                    Look for customer reviews and ratings to gauge reputation. Finally, test their service with 
+                    a demo account before committing real money to confirm reliability and support.<p>
+            </div>
+        </div>
+
+        <div class="howToInvest1">
+            <div class="investParagraph">
+                <h3>Research the Market</h3>
+                <p> To find a trusted broker, first check if they are regulated by recognized
+                    authorities like the SEC, FCA, or ASIC. Next, review their trading platform for 
+                    usability and features. Then, research fees and commissions to ensure transparency.
+                    Look for customer reviews and ratings to gauge reputation. Finally, test their service with 
+                    a demo account before committing real money to confirm reliability and support.<p>
+            </div>
+
+            <!-- TradingView Widget BEGIN -->
+                    <div class="tradingViewsize">
+                    <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
+                    {
+                    "dataSource": "SPX500",
+                    "blockSize": "market_cap_basic",
+                    "blockColor": "change",
+                    "grouping": "sector",
+                    "locale": "en",
+                    "symbolUrl": "",
+                    "colorTheme": "dark",
+                    "exchanges": [],
+                    "hasTopBar": false,
+                    "isDataSetEnabled": false,
+                    "isZoomEnabled": true,
+                    "hasSymbolTooltip": true,
+                    "isMonoSize": false,
+                    "width": "100%",
+                    "height": "100%"
+                    }
+                    </script>
+                    <!-- the redlines are because html doesnt see it as valid syntax but it is custom json by the trading view widget so i can ignore the redlines because its not invalid, vscode just sees it as invalid -->
+                    </div>
+                </div>
+                <!-- TradingView Widget END -->
+        </div>
+
+        <div class="howToInvest1">
+            <img src="images/investMan.webp" alt="Investing Man Image" class="brokerImage1">
+            <div class="investParagraph">
+                <h3>Invest and Hold</h3>
+                <p> To find a trusted broker, first check if they are regulated by recognized
+                    authorities like the SEC, FCA, or ASIC. Next, review their trading platform for 
+                    usability and features. Then, research fees and commissions to ensure transparency.
+                    Look for customer reviews and ratings to gauge reputation. Finally, test their service with 
+                    a demo account before committing real money to confirm reliability and support.<p>
+            </div>
+        </div>
+    </body>
+</html>

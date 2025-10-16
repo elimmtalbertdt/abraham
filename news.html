@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Stock Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="newsPageContent">
+        <div class="topbar">    <!--top bar for navigation on ever page-->
+            <a href="index.html" class="logo">The Stock Website</a>
+            <div class="navigationLinks">
+                <a href="news.html" class="link">News</a>
+                <a href="brokers.html" class="link">Brokers</a>
+                <a href="TopPicks.html" class="link">Top Picks</a>
+                <a href="Invest.html" class="link">Invest</a>
+            </div>
+        </div>
+        <div class="ticker">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+            {
+            "symbols": [
+                {
+                "proName": "FOREXCOM:SPXUSD",
+                "title": "S&P 500 Index"
+                },
+                {   
+                "proName": "BITSTAMP:BTCUSD",
+                "title": "Bitcoin"
+                },
+                {
+                "proName": "NASDAQ:AAPL",
+                "title": "Apple"
+                },
+                {
+                "proName": "OANDA:XAUUSD",
+                "title": "Gold"
+                },
+                {
+                "proName": "NASDAQ:NVDA",
+                "title": "Nvidia"
+                }
+            ],
+            "colorTheme": "dark",
+            "locale": "en",
+            "largeChartUrl": "",
+            "isTransparent": false,
+            "showSymbolLogo": true,
+            "displayMode": "adaptive"
+            }
+            </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+        <div class="newsArticles"> <!--all the articcles stacked nicely-->
+            <h1>News in the Market</h1>
+            <div class="newsPageContent"> <!--news page content displayed well-->
+                <div class="newsContent"> <!--smaller sub container to allow for better display-->
+                    <div class="newsSection"><!--smaller sub container to allow for better showcase of information-->
+                        <h2>Nvidia sky rockets</h2>
+                        <p>Nvidia’s stock soared to a record $155 in June 2025, 
+                            driven by its leadership in AI chips and eased U.S.-China trade tensions. 
+                            The company’s partnerships and new AI products boosted investor confidence, 
+                            pushing its market value past $3.7 trillion. Analysts predict Nvidia could 
+                            soon hit $4 trillion. Despite insiders selling over $1 billion in shares, Nvidia
+                            remains a top AI stock with strong growth potential.
+                             The scale of Nvidia’s growth reflects broader trends in the AI and semiconductor sectors,
+                            where demand for high-performance computing continues to skyrocket. As cloud providers, automakers, 
+                            and even defense industries adopt Nvidia’s chips, the company benefits from diversified revenue streams
+                            and global demand. With a dominant position in GPU-based AI infrastructure and expanding software
+                            ecosystems like CUDA and Omniverse, Nvidia has become essential to the AI supply chain.
+                            The company’s size and influence now rival the likes of Apple and Microsoft, and its ability to 
+                            weather macroeconomic shifts and international policy changes makes it a cornerstone of long-term 
+                            tech investment.<p>
+                    </div>
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                    {
+                    "allow_symbol_change": true,
+                    "calendar": false,
+                    "details": false,
+                    "hide_side_toolbar": true,
+                    "hide_top_toolbar": false,
+                    "hide_legend": false,
+                    "hide_volume": false,
+                    "hotlist": false,
+                    "interval": "D",
+                    "locale": "en",
+                    "save_image": true,
+                    "style": "1",
+                    "symbol": "NASDAQ:NVDA",
+                    "theme": "dark",
+                    "timezone": "Etc/UTC",
+                    "backgroundColor": "#0F0F0F",
+                    "gridColor": "rgba(242, 242, 242, 0.06)",
+                    "watchlist": [],
+                    "withdateranges": false,
+                    "compareSymbols": [],
+                    "studies": [],
+                    "width": 800,
+                    "height": 550
+                    }
+                    </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+                </div>
+            </div>
+            <div class="newsPageContent">
+                <div class="newsContent">
+                    <div class="newsSection">
+                        <h2>New USA tariffs hit hard</h2>
+                        <p>In 2025, many major companies like Nike, Walmart, Shein, 
+                            and Ford announced price increases due to President Trump’s tariffs,
+                            which added a 10% tax on most imports and higher rates on goods from countries 
+                            like China and Vietnam. These tariffs increased costs across industries such as retail,
+                            auto, and electronics. Businesses are raising prices selectively to offset higher 
+                            import costs, causing consumers to face higher prices on many imported products.
+                            The scale of the impact is significant, as these companies source large portions of 
+                            their inventory and materials from abroad. For example, Nike and Shein depend heavily
+                            on low-cost manufacturing in Asia, while Walmart imports a wide range of consumer goods. 
+                            Ford, like other automakers, relies on global supply chains for parts and assembly. With
+                            tariffs affecting billions of dollars' worth of goods, even a 10% increase translates to
+                            billions in added costs across the economy. These added costs are often passed on to consumers, 
+                            leading to inflationary pressure, particularly in budget-sensitive sectors like clothing, footwear,
+                            and household electronics.<p>
+                    </div>
+                    
+                    <div class="videoWithButton"> <!-- button for the video that is on the screen pause/play control-->
+                        <div class="buttons">
+                            <button onclick="back10()"> -10 seconds </button>
+                            <button onclick="playPause()"> play/pause </button>
+                            <button onclick="forward10()"> +10 seconds </button>
+                        </div>
+                        <video id="video" class="video">
+                                <source src="video/trade.mp4" type="video/mp4">
+                            Your browser does not support this video tag
+                        </video>
+                    </div>
+                    <script src="javascript/script.js"> </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
